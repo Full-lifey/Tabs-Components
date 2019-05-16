@@ -2,8 +2,8 @@
 class TabLink {
   constructor(element) {
     this.element = element
-    // console.log(this.element.dataset.tab)
-    this.dataValue = this.element.dataset.tab
+    // console.log(this.element.dataset)
+    this.dataValue = element.dataset.tab
     this.tabContent = document.querySelector(`.tabs-item[data-tab="${this.dataValue}"]`)
     // console.log(this.tabContent)
     element.addEventListener('click', () => this.select())
